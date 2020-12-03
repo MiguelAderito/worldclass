@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Sticky NavBar With Scroll Effect - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .header-section{
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+      padding: 10px 0px;
+}
+.logo{
+      color: #fff !important; 
+}
+
+hr {border-top: 1px solid #000; width:50%;}
+
+a {color: #000;}
+
+a:link{text-decoration:none;}
+
+.box1{background:gray;}
+.box2{background: rgb(192, 192, 200, 0.6);}
+.box3{background: rgb(255, 0, 0, 0.6);;}
+
+
+
+
+
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+
+.footer-wrap {
+    background: url() no-repeat top;
+    background-color: black;
+    padding-top: 30px;
+    background-size: cover;
+}
+
+.footer-wrap h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-wrap p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #b3b3b3;
+    margin-top: 15px;
+}
+
+.footer-wrap p a {
+    color: #fff;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.footer-wrap p a:hover {
+    text-decoration: none;
+    color: #ff7800;
+}
+
+.footer-links li a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+
+.footer-links li:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+    color: #b3b3b3;
+}
+
+.footer-category li a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.footer-category li:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+    color: #b3b3b3;
+}
+
+.address {
+    
+    color: #b3b3b3;
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.address:before {
+    content: "\f277";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info a {
+ 
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.info a {
+
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.fa-fax:before {
+    content: "\f1ac";
+}
+
+.copyright {
+    border-top: 1px solid #5f5f5f;
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-top: 25px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+.menu ul li {
+    font-size: 17px;
+    padding: 0px 10px;
+}
+.menu ul li a {
+    color: #fff !important;
+}
+
+
+.black{
+      background: red;
+      background-image: linear-gradient(to right, white , blue);
+      box-shadow: 0px 1px 7px 1px #111e6cc2;
+}
+.hero-section {
+      width: 100%;
+      height: 100vh;
+      background-image: url(https://i.postimg.cc/BZYnPt60/background-slider.jpg);
+      background-size: cover;
+      position: relative;
+}
+.display {
+    display: table;
+}
+.hero-content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100vh;
+}
+.content {
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+@media(max-width: 786px) {
+      .header-section{
+            background: #111E6C;
+            box-shadow: 0px 1px 7px 1px #111e6cc2;
+      }
+      .menu ul li a {
+          text-align: center;
+      }
+      .showing {
+            max-height: 35em;
+      }
+      .menu-icon {
+            display: block;
+      }
+      .custom-navbar button:focus {
+            outline: none;
+      }
+      .custom-navbar .navbar-toggler-icon i {
+            color: #fff;
+            font-size: 24px;
+      }
+      .custom-navbar .navbar-toggler-icon {
+            text-align: center;
+            line-height: 30px;
+      }
+
+}
+
+
+
+ <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        #slider-animation{max-height:550px;}
+.heading-box h2{ width:100%; color: red; }
+h2, p{color:#fff;}
+.carousel-item img{width:100%;}
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  right: 15%;
+  color: #000;
+  transform: translateY(-50%);
+}
+
+<style type="text/css">
+        h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+<!---gallery--->
+
+ .work-area{
+  padding: 100px 0px;
+}
+.work-filter ul li{
+  margin: 0px 15px;
+  cursor: pointer;
+}
+.work-filter-item{
+  position: relative;
+  margin-bottom: 30px;
+}
+.work-img {
+    position: relative;
+}
+.work-img:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.work_detail {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.work-filter-item:hover .work-img:after{
+  opacity: 0.7;
+}
+.work-filter-item:hover .work_detail{
+  bottom: 40%;
+  opacity: 1;
+  visibility: visible;
+}
+.active {
+    color: #e65f78 !important;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+ <!-- Header Area Start -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg custom-navbar">
+                      <a class="navbar-brand logo" href="www.ebenezer.co.mz"><img src="img/ebenezer.png" width="30%"></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nossos Servicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</header>
+    <!-- Header Area End -->
+
+
+
+
+<section>
+    <div id="slider-animation" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+ 
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slide/civil.jpg" alt="Los Angeles">
+        <div class="text-box">
+            <h2 class="wow slideInRight" data-wow-duration="2s">Construção Civil | Civil Construction</h2>
+            <p class="wow slideInLeft" data-wow-duration="2s">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. </p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="slide/infra.jpg" alt="Los Angeles">
+ <div class="text-box">
+            <div class="row align-items-center">
+                   
+            <div class="col-md-6">
+                <h2 class="wow fadeInUp" data-wow-duration="4s">Obras Publicas e Infraestruturas de Engenharia</h2>
+            <p class="wow fadeInUp" data-wow-duration="2s">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. </p>
+            </div>
+            <div class="col-md-6 wow slideInLeft" data-wow-duration="4s">
+               <img src="">
+           
+        </div>
+        </div>
+    </div>
+    </div>
+      <div class="carousel-item">
+      <img src="slide/man.jpg" alt="Chicago">
+<div class="text-box">
+            <div class="row align-items-center">
+                    
+            <div class="col-md-6  wow slideInRight" data-wow-duration="4s">
+                <h2>Reabilitação e Manutenção de Obras e Infraestruturas</h2>
+            <p>There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. </p>
+            </div>
+            <div class="col-md-6  wow slideInLeft" data-wow-duration="4s">
+               <img src="slide/pintura.png">
+           
+        </div>
+        </div>
+    </div>
+  </div>
+
+<div class="carousel-item">
+      <img src="slide/material.png" alt="Chicago">
+<div class="text-box">
+            <div class="row align-items-center">
+                    
+            <div class="col-md-6  wow slideInRight" data-wow-duration="4s">
+                <h2>Produção e venda de Material de Construcao</h2>
+            <p>There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. </p>
+            </div>
+           
+           
+        </div>
+        </div>
+    </div>
+  </div>  
+  
+</div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+    
+</section>
+
+
+
+<script type="text/javascript">
+
+   wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+</script>
+
+
+<style type="text/css">
+        .section-title {
+  position: relative
+}
+.section-title p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.section-title h4 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 20px;
+  display: inline-block
+}
+.section-title h4:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #d8d8d8;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
+}
+.section-title h4:after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #FF7200;
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
+.mb-100{
+    margin-bottom:100px;
+}
+.services {
+  background-color: #FBFBFB;
+}
+.single-service {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 30px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16)
+}
+.single-service:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #FF7200;
+  left: 0;
+  top: 0;
+  content: "";
+  -webkit-transition: .3s;
+  transition: .3s
+}
+.single-service:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #FF7200;
+  right: 0;
+  bottom: 0;
+  content: "";
+  -webkit-transition: .3s;
+  transition: .3s
+}
+.single-service:hover:after,
+.single-service:hover:before {
+  width: 50%;
+  height: 2px;
+  -webkit-transition: .3s;
+  transition: .3s
+}
+.single-service:hover {
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.10)
+}
+.single-service i.fa {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+  line-height: 60px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s
+}
+.single-service:hover i.fa {
+  background-color: #FF7200;
+  color: #fff;
+  border-color: #FF7200;
+  border-radius: 0;
+}
+.single-service h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.single-service p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+    <!-- Header Area Start -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg custom-navbar">
+                      <a class="navbar-brand logo" href="www.ebenezer.co.mz"><img src="img/ebenezer.png" width="30%"></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quem somos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Servicos.html">Nossos Servicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+</header>
+    <!-- Header Area End -->
+
+ 
+    <!-- content Area End -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script type="text/javascript">
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+        $('.header-section').addClass('black');
+    }
+    else {
+        $('.header-section').removeClass('black');
+    }
+})
+</script>
+
+
+
+ <section class="services pt-100 pb-50" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <p></p>
+                     <h4>Nossos Serviços</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-laptop"></i>
+                     <h4>Construção Civil </h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-gears"></i>
+                     <h4>Obras Publicas </h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-mobile"></i>
+                     <h4>Reabilitação e Manutenção de Obras & Infraestruturas</h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-magic"></i>
+                     <h4>Infraestruturas de Engenharia</h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-pencil"></i>
+                     <h4>Estradas & Pontes</h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <i class="fa fa-fa fa-lightbulb-o"></i>
+                     <h4>Consultoria</h4>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<!---gallery--->
+
+    <section class="work-area bg-light" id="work-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-heading text-center">
+                            <h2>Portfolio <span class="font-weight-bold">Work</span></h2>
+                            <p class="text-muted t-2">Projectos Concluidos com Sucesso <br>when established fact looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="work-filter text-center mt-5" data-aos="fade-up" data-aos-duration="500">
+                            <ul class="list-inline text-uppercase">
+                                <li class="list-inline-item active" data-filter="*">All</a></li>
+                                <li class="list-inline-item" data-filter=".seo">Manutencao</a></li>
+                                <li class="list-inline-item" data-filter=".webdesign">Construcao</a></li>
+                                <li class="list-inline-item" data-filter=".work">WORK</a></li>
+                                <li class="list-inline-item" data-filter=".wordpress">Wordpress</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 work-filter-list" data-aos="fade-up" data-aos-duration="500">
+
+                    <div class="col-lg-4 webdesign seo">
+                        <div class="work-filter-item">
+                            <div class="work-img">
+                                <img src="projectos/BM.jpg" class="img-fluid" alt="work-img">
+                            </div>
+                            <div class="work_detail text-center">
+                                <p class="mb-2 text-white">Reabilitação do Armazém do Banco de Moçambique-Quelimane</p>
+                                <h4 class="mb-0 text-white">Banco de Mocambique</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 webdesign wordpress">
+                        <div class="work-filter-item">
+                            <div class="work-img">
+                                <img src="projectos/SE.jpg" class="img-fluid" alt="work-img">
+                            </div>
+                            <div class="work_detail text-center">
+                                <p class="mb-2 text-white">Construção de Duas Residencias</p>
+                                <h4 class="mb-0 text-white">SE de Zambezia Vila de Macia</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 work wordpress">
+                        <div class="work-filter-item">
+                            <div class="work-img">
+                                <img src="projectos/GD.jpg" class="img-fluid" alt="work-img">
+                            </div>
+                            <div class="work_detail text-center">
+                                <p class="mb-2 text-white">Corredor de tratamento de Gado</p>
+                                <h4 class="mb-0 text-white"> Nwachicolane Chokwe</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 webdesign work">
+                        <div class="work-filter-item">
+                            <div class="work-img">
+                                <img src="projectos/EP.jpg" class="img-fluid" alt="work-img">
+                            </div>
+                            <div class="work_detail text-center">
+                                <p class="mb-2 text-white">Reabilitação</p>
+                                <h4 class="mb-0 text-white">EP 24 de Julho</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo webdesign">
+                        <div class="work-filter-item">
+                            <div class="work-img">
+                                <img src="projectos/TP.jpg" class="img-fluid" alt="work-img">
+                            </div>
+                            <div class="work_detail text-center">
+                                <p class="mb-2 text-white">Construção de Estrada</p>
+                                <h4 class="mb-0 text-white">Terra Planagem</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo webdesign">
+                        <div class="work-filter-item">
+                            <div class="work-img">
+                                <img src="projectos/PT.jpg" class="img-fluid" alt="work-img">
+                            </div>
+                            <div class="work_detail text-center">
+                                <p class="mb-2 text-white">Construção de Ponte</p>
+                                <h4 class="mb-0 text-white">Ponte sobre o Rio</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!---end gallery--->        
+
+
+
+
+<!---parceiros--->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<div class="container">
+  <h2>Nossos Clientes</h2>
+   <section class="customer-logos slider">
+      <div class="slide"><img src="parceiros/BM.jpg"></div>
+      <div class="slide"><img src="parceiros/jh.png"></div>
+      <div class="slide"><img src="parceiros/wv.png"></div>
+      <div class="slide"><img src="parceiros/pnud.jpg"></div>
+      <div class="slide"><img src="parceiros/unicef.jpg"></div>
+      <div class="slide"><img src="parceiros/UNFPA_logo.svg"></div>
+      <div class="slide"><img src="parceiros/ced.png"></div>
+      <div class="slide"><img src="parceiros/plan.jpg"></div>
+      <div class="slide"><img src="parceiros/covid.png"></div>
+   </section>
+   
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
+
+
+
+
+ <!---contact--->
+ 
+<div class="container-fluid">
+<h1 class="text-center">Nossos Contactos</h1>
+<hr>
+ <div class="row">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8594.461152532589!2d32.58930374043989!3d-25.95973016149109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69bab48068939%3A0xe6db1d9b4d872dd8!2sEbenezer%20Construcoes%20e%20Engenharia!5e1!3m2!1spt-PT!2smz!4v1597066003311!5m2!1spt-PT!2smz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+ </div>
+  <div class="row text-center">
+    <div class="col-4 box1 pt-4">
+        <a href="tel:+123456789"><i class="fas fa-phone fa-3x"></i>
+        <h3 class="d-none d-lg-block d-xl-block">Telefone</h3>
+        <p class="d-none d-lg-block d-xl-block">+258 21418045</p></a>
+        <p class="d-none d-lg-block d-xl-block">+258 821418045</p></a>
+      </div>
+      <div class="col-4 box2 pt-4">
+        <a href=""><i class="fas fa-home fa-3x"></i>
+        <h3 class="d-none d-lg-block d-xl-block">Endereço Sede</h3>
+        <p class="d-none d-lg-block d-xl-block">Rua da Justiça, 34, - Maputo-Moçambique</p></a>
+        <h3 class="d-none d-lg-block d-xl-block">Estaleiro</h3>
+        <p class="d-none d-lg-block d-xl-block">Bairro Monomotapa, - Maputo-Moçambique</p></a>
+        <h3 class="d-none d-lg-block d-xl-block">Sucursal Xai-Xai</h3>
+        <p class="d-none d-lg-block d-xl-block">Bairro Xinungulie, Rua da Praia - Xai-vai/Gaza-Moçambique</p></a>
+      </div>
+      <div class="col-4 box3 pt-4">
+        <a href="mailto:test@test.com"><i class="fas fa-envelope fa-3x"></i>
+        <h3 class="d-none d-lg-block d-xl-block">E-mail</h3>
+        <p class="d-none d-lg-block d-xl-block">ebenezer.construcoes.lda@gmail.com</p></a>
+         <p class="d-none d-lg-block d-xl-block">geral@ebenezer.co.mz</p></a>
+          <p class="d-none d-lg-block d-xl-block">estaleiro@ebenezer.co.mz</p></a>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+ <!---contact end--->     
+
+
+ <!--footer start-->
+<div class="footer-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <h3></h3>
+        <div class="footer-logo"><img src="img/ebenezer.png" width="60%"  alt="www.ebenezer.co.mz"></div>
+        <p>Uma empresa moçambicana fundada por especialistas multisectoriais de enorme experiencia teorica, Tecnica e Pratica que transmitem qualidade sigilo, etica e acima de tudo profissionalismo desde as especificacoes tecnicas até a entrega do projecto... <a href="www.facebook.com/ebenezerconst/">Read More</a></p>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <h3>Quick  LInks</h3>
+        <ul class="footer-links">
+          <li><a href="#.">Home</a></li>
+          <li><a href="#.">Quem Somos</a></li>
+          <li><a href="#.">Nossos Servicos</a></li>
+          <li><a href="#.">Areas de actuacao</a></li>
+          <li><a href="#.">Portfolio</a></li>
+          <li><a href="#.">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h3>Principais Categorias</h3>
+        <ul class="footer-category">
+          <li><a href="#.">Construção Civil </a></li>
+          <li><a href="#.">Obras Publicas</a></li>
+          <li><a href="#.">Infraestruturas de Engenharia</a></li>
+          <li><a href="#.">Reabilitação</a></li>
+          <li><a href="#.">Manutencao</a></li>
+          <li><a href="#."> Produção e Venda de Material de Construção</a></li>
+          <li><a href="#.">Aluguer de Equipamento</a></li>
+          <li><a href="#.">Consultoria</a></li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h3>Endereço</h3>
+        <div class="address">Rua da Justiça, 34 Maputo - Moçambique </div>
+        <div class="info"><i class="fa fa-phone" aria-hidden="true"></i> <a href="#.">+2588 21418045</a></div>
+        <div class="info"><i class="fa fa-fax" aria-hidden="true"></i> <a href="#.">+258 84 7753010</a></div>
+        <div class="info"><i class="fa fa-fax" aria-hidden="true"></i> <a href="#.">+258 82 8845606</a></div>
+      </div>
+    </div>
+    <div class="copyright">Copyright © 2020 Visuart, Lda - All Rights Reserved.</div>
+  </div>
+</div>
+
+<!--footer end--> 
+
+
+
+
+</body>
+</html>
